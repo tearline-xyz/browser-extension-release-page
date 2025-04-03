@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -55,7 +56,7 @@ const Roadmap = () => {
               initial={{ height: 0 }}
               animate={roadmapInView ? { height: "100%" } : { height: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
-              className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-purple-600 transform -translate-x-1/2"
+              className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 to-purple-600 transform -translate-x-1/2 "
             ></motion.div>
 
             <div className="space-y-16">
@@ -95,9 +96,10 @@ const Roadmap = () => {
                   {/* Circle on timeline */}
                   <motion.div
                     initial={{ scale: 0 }}
+                    whileInView={{ x: "-50%" }}
                     animate={roadmapInView ? { scale: 1 } : { scale: 0 }}
-                    transition={{ duration: 0.3, delay: 0.7 + index * 0.1 }}
-                    className="absolute left-1/2 top-6 w-4 h-4 rounded-full bg-blue-500 transform -translate-x-1/2"
+                    transition={{ duration: 0.2 }}
+                    className="absolute left-1/2 top-6 w-4 h-4 rounded-full bg-blue-500 hidden sm:block"
                   ></motion.div>
                 </motion.div>
               ))}

@@ -1,19 +1,3 @@
-"use client";
-
-import { useEffect, useRef, useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { motion, useScroll, useTransform } from "framer-motion";
-import {
-  ChevronRight,
-  Code,
-  Database,
-  Lock,
-  Sparkles,
-  Zap,
-} from "lucide-react";
-import { useInView } from "react-intersection-observer";
-
 import { ClickEffect } from "@/components/click-effect";
 import HeroSection from "@/components/hero";
 import DemoSection from "@/components/demo-section";

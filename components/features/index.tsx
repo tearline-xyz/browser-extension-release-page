@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { motion } from "framer-motion";
 import CircuitAnimation from "@/components/features/circuit-animation";
@@ -90,12 +91,15 @@ const FeatureSection = () => {
                 <Card className="bg-blue-950/20 border-blue-500/20 backdrop-blur-sm hover:bg-blue-900/30 transition-all duration-300 overflow-hidden group">
                   <CardContent className="p-8">
                     <div className="mb-6 inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-blue-600 to-purple-600 text-white group-hover:scale-110 transition-transform duration-300">
-                      {feature.icon}
+                      {React.cloneElement(feature.icon, {
+                        className:
+                          "duration-300 scale-0 h-8 w-8 group-hover:scale-100 transition-transform",
+                      })}
                     </div>
-                    <h3 className="text-2xl font-bold mb-3 group-hover:text-blue-400 transition-colors">
+                    <h3 className="text-2xl font-bold mb-3 group-hover:text-blue-400 transition-colors cursor-default">
                       {feature.title}
                     </h3>
-                    <p className="text-gray-400 group-hover:text-gray-300 transition-colors">
+                    <p className="text-gray-400 group-hover:text-gray-300 transition-colors cursor-default">
                       {feature.description}
                     </p>
 

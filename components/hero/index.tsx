@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Button } from "../ui/button";
@@ -11,7 +12,6 @@ const HeroSection = () => {
   const headerY = useTransform(scrollY, [0, 300], [0, -100]);
   return (
     <div>
-      {" "}
       <motion.section
         style={{ opacity: headerOpacity, y: headerY }}
         className="relative pt-20 pb-32 px-4 sm:px-6 lg:px-8"
@@ -28,16 +28,15 @@ const HeroSection = () => {
             transition={{ duration: 0.8 }}
             className="relative z-20"
           >
-            <ParticleText
-              text="Intelligent Browser Control"
-              className="text-5xl md:text-7xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600"
-            />
+            <div className="text-5xl md:text-7xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600">
+              Intelligent Browser Control
+            </div>
 
             <p className="text-xl md:text-2xl max-w-3xl mx-auto text-gray-300 mb-8">
               Control your browser through natural language prompts, enabling
               automated operations and intelligent task processing
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
+            <div className="flex flex-wrap justify-center">
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white border-0 relative overflow-hidden group"
@@ -46,14 +45,14 @@ const HeroSection = () => {
                 <span className="absolute inset-0 bg-gradient-to-r from-blue-700 to-cyan-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                 <span className="absolute -inset-x-1 bottom-0 h-[2px] bg-gradient-to-r from-transparent via-blue-400 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shimmer"></span>
               </Button>
-              <Button
+              {/* <Button
                 size="lg"
                 variant="outline"
                 className="border-blue-500 text-blue-400 hover:bg-blue-950/30 relative overflow-hidden group"
               >
                 <span className="relative z-10">Learn More</span>
                 <span className="absolute -inset-x-1 bottom-0 h-[2px] bg-gradient-to-r from-transparent via-blue-400 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shimmer"></span>
-              </Button>
+              </Button> */}
             </div>
           </motion.div>
 
