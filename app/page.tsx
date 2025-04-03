@@ -23,9 +23,6 @@ import CtaSection from "@/components/cta-section";
 import Footer from "@/components/footer";
 
 export default function PluginLandingPage() {
-  // Particle animation for background
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-
   return (
     <div className="relative min-h-screen bg-black text-white">
       {/* Click effect component */}
