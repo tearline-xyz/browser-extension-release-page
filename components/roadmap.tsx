@@ -10,11 +10,12 @@ const Roadmap = () => {
     threshold: 0.1,
   });
   const roadmapItems = [
-    "Multi-browser support extension",
-    "More custom operation commands",
-    "Workflow automation features",
-    "Integration with other AI tools",
-    "Enterprise-level security features",
+    "Focus on optimizing AI automated interaction experience and improving basic interaction logic",
+    "Launch a separate Web3 Project Marketplace",
+    "Launch Community Prompt Ecology",
+    "The stable version of the plug-in is released",
+    "AI engine and data analytics upgrades",
+    "Cross-chain and cross-platform ecological expansion",
   ];
   return (
     <div>

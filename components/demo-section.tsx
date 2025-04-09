@@ -3,12 +3,7 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 
 const DemoSection = () => {
-  const demoVideos = [
-    "/placeholder.svg?height=720&width=1280",
-    "/placeholder.svg?height=720&width=1280",
-    "/placeholder.svg?height=720&width=1280",
-    "/placeholder.svg?height=720&width=1280",
-  ];
+  const demoVideos = ["/demo1.png", "/demo2.png", "/demo3.png", "/demo4.png"];
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,

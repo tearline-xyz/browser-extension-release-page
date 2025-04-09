@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tearline - Intelligent Browser Control Plugin",
+  title: "GhostDriver",
   description:
     "Control your browser through natural language prompts, enabling automated operations and intelligent task processing",
   generator: "v0.dev",
