@@ -38,6 +38,12 @@ const HeroSection = () => {
             <div className="flex flex-wrap justify-center">
               <Button
                 size="lg"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/tearline-xyz/GhostDriver",
+                    "_blank"
+                  )
+                }
                 className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white border-0 relative overflow-hidden group"
               >
                 <span className="relative z-10">Install Now</span>

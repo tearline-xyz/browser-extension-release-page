@@ -41,10 +41,16 @@ const CtaSection = () => {
             </p>
             <Button
               size="lg"
+              onClick={() =>
+                window.open(
+                  "https://github.com/tearline-xyz/GhostDriver",
+                  "_blank"
+                )
+              }
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 px-8 py-6 text-lg relative overflow-hidden group"
             >
               <span className="relative z-10 flex items-center">
-                Get Started{" "}
+                Get Started
                 <ChevronRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </span>
               <span className="absolute inset-0 bg-gradient-to-r from-blue-700 to-purple-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
